@@ -1,0 +1,36 @@
+
+
+.question:hover {
+    background-color: #f0e6f4; /* Couleur mauve pour l'effet hover */
+}
+
+
+.question {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+}
+
+.question.selected {
+    background-color: #ba1af9; /* Couleur mauve pour l'effet de sélection */
+}
+
+.arrow-icon {
+    font-size: 16px;
+}
+
+.answer {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.answer.active {
+    display: block;
+}

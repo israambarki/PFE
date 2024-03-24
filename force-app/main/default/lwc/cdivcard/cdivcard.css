@@ -1,0 +1,137 @@
+.card {
+    width: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white; /* Fond blanc pour les cartes */
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.button-container {
+    padding: 10px;
+}
+
+.button {
+    background-color: white; /* Fond blanc pour le bouton */
+    color: #1e90ff; /* Bleu */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #1e90ff; /* Hover bleu */
+    color: white;
+}
+
+/*.card {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+/*.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }*/
+  
+/*
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Pour cadrer l'image */
+  /*  border-radius: 0.5rem;
+}*/
+
+/*.card-text {
+    margin-top: 0.5rem;
+    padding: 2px 16px;
+}
+/*
+img {
+    border-radius: 5px 5px 0 0;
+    height: max-content;
+  }*/
+
+
+.h1{
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+  
+  .flip-card {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+
+
+    background-color: transparent;
+    width: 250px; /* Largeur de la carte */
+    height: 300px; /* Hauteur de la carte */
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Retirer si vous ne voulez pas l'effet 3D */
+    margin: 5px; /* Espacement autour de la carte */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+
+    /*ajouter!!*/
+    display: flex; /* Ajout de display:flex */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+/* Make the image fill the entire card */
+.flip-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

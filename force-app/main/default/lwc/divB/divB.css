@@ -1,0 +1,44 @@
+.benefits-container {
+
+    height: 200px; /* Hauteur plus grande pour un aspect plus attrayant */
+    width: 100%;
+   
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 150px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: row; /* Affichage en ligne des éléments */
+    justify-content: space-around; /* Espacement égal entre les éléments */
+    align-items: center;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bullet {
+    color: blue;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; /* Pour former un cercle */
+    background-color: #f2f2f2; /* Couleur de fond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

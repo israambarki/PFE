@@ -1,0 +1,35 @@
+.offers-container {
+   
+   
+    height: 500px; /* Hauteur plus grande pour un aspect plus attrayant */
+    width: 100%;
+   
+   
+    background: linear-gradient(to right, #00bfff, #1e90ff); /* Dégradé bleu */
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+
+
+

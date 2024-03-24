@@ -1,0 +1,88 @@
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Hauteur importante */
+    overflow: hidden;
+}
+
+.blur-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Remplit le conteneur en conservant les proportions */
+    filter: blur(5px); /* Flou initial */
+    transition: filter 0.3s; /* Animation de transition */
+}
+
+.image-container:hover .blur-image {
+    filter: none; /* Annuler le flou au survol */
+}
+
+.image-overlay {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Masquer le texte et le bouton initialement */
+    transition: opacity 0.3s; /* Animation d'apparition */
+
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1; /* Afficher le texte et le bouton au survol */
+}
+
+.overlay-text {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.overlay-button {
+    background-color: #ff1a1a; /* Bouton rouge */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    padding: 12px 24px; /* Ajustement de la taille du bouton */
+    font-size: 16px; /* Ajustement de la taille du texte à l'intérieur du bouton */
+
+
+
+    margin-top: 10px;
+    padding: 5px 10px;
+
+  
+   
+ 
+    
+    transition: background-color 0.3s; /* Animation de transition */
+}
+
+.overlay-button:hover {
+    background-color: #ffd700; /* Hover jaune */ 
+}
+
+.paragraphe{
+
+margin-top: 10px;
+font-size: 16px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}

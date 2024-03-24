@@ -1,0 +1,34 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-21-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <!-- <div class="card" onclick={handleCardClick}>-->
+       <!-- <img src={imageSrc} alt="Image" class="card-image" style="width:100%"/>-->
+        
+        <div class="flip-card" onclick={handleCardClick}>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src={imageSrc} alt="Avatar">
+              </div>
+              <div class="flip-card-back">
+                <h1 style="color: aliceblue"><strong>{cardText}</strong></h1>
+              </div>
+            </div>
+
+            <div style="background-color: aliceblue; color:black">{soustext}</div>
+          </div>
+
+
+
+         <!-- <div class="button-container">
+            <button class="button">{cardText}</button>
+        </div>-->
+
+
+
+
+</template>

@@ -1,0 +1,28 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-21-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div>
+        <div class={questionClass1} data-id="1" onclick={toggleAnswer} style="font-size: 16px; font-weight: bold">Qu'est ce que un contrat d'assurance maladie ?
+            <div class="arrow-icon" data-id="1" if:true={showAnswer1}>&#x25B2;</div>
+            <div class="arrow-icon" data-id="1" if:false={showAnswer1}>&#x25BC;</div>
+        </div>
+        <div class={answerClass1} data-id="1" style="font-size: 14px;">L’assurance maladie permet d'assurer un individu face à des risques financiers de soins en cas de maladie, ainsi qu'un revenu minimal au cas où la personne ne pourrait pas exercer son travail.</div>
+        
+        <div class={questionClass2} data-id="2" onclick={toggleAnswer} style="font-size: 16px; font-weight: bold">Qu'elle est le délai de remboursement de l'assurance maladie de CareShieldsHealth
+            <div class="arrow-icon" data-id="2" if:true={showAnswer2}>&#x25B2;</div>
+            <div class="arrow-icon" data-id="2" if:false={showAnswer2}>&#x25BC;</div>
+        </div>
+        <div class={answerClass2} data-id="2">Réponse </div>
+        
+        <div class={questionClass3} data-id="3" onclick={toggleAnswer} style="font-size: 16px; font-weight: bold">J'ai une petite entreprise qu'elle assurance me convient ?
+            <div class="arrow-icon" data-id="3" if:true={showAnswer3}>&#x25B2;</div>
+            <div class="arrow-icon" data-id="3" if:false={showAnswer3}>&#x25BC;</div>
+        </div>
+        <div class={answerClass3} data-id="3">Réponse </div>
+    </div>
+</template>

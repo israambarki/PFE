@@ -1,0 +1,74 @@
+
+.card {
+    background: linear-gradient(to right, #00bfff, #1e90ff); /* Dégradé bleu */
+   
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre douce */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation de transition */
+
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Translation vers le haut au survol */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Ombre plus prononcée */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+label, input, select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* Styles CSS pour rendre les champs de formulaire arrondis et attrayants */
+input[type="text"],
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px; /* Coins arrondis */
+    padding: 8px; /* Espacement intérieur */
+    border: 1px solid #ccc; /* Bordure */
+    box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur/hauteur */
+}
+
+input[type="submit"] {
+    background-color: #f77e0d; /* Bouton orangé */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 12px 24px; /* Ajustement de la taille du bouton */
+    font-size: 16px; /* Ajustement de la taille du texte à l'intérieur du bouton */
+
+}
+
+input[type="submit"]:hover {
+    background-color: #c0ea05;
+}
+
+/*label.required::after {
+    content: "*";
+    color: red;
+}*/

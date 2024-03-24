@@ -1,0 +1,37 @@
+.container {
+    height: 200px; /* Hauteur plus grande pour un aspect plus attrayant */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(to right, #ff4d4d, #ff1a1a); /* Dégradé rouge */
+    color: white; /* Texte blanc */
+}
+
+
+.text-container {
+    flex: 1;
+}
+
+.button-container {
+    margin-left: 1rem;
+}
+
+.button {
+    background-color: #ff1a1a; /* Bouton rouge */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 12px 24px; /* Ajustement de la taille du bouton */
+    font-size: 16px; /* Ajustement de la taille du texte à l'intérieur du bouton */
+
+}
+
+.button:hover {
+    background-color: #ffd700; /* Hover jaune */
+}
+
