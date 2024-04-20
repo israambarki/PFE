@@ -37,5 +37,9 @@
     "**/{aura,lwc}/**/*.js": [
       "eslint"
     ]
+  },
+  "dependencies": {
+    "chart.js": "^4.4.2",
+    "papaparse": "^5.4.1"
   }
 }

@@ -36,13 +36,13 @@ img {
   .flip-card {
    
     border: 1px solid #ccc;
-    border-radius: 0.5rem; /* Arrondir les coins du card */
+    border-radius: 15px; /* Arrondir les coins du card */
 
 
     background-color: transparent;
-    width: 200px; /* Largeur de la carte */
+    width: 150px; /* Largeur de la carte */
     height: 150px; /* Hauteur de la carte */
-    border: 1px solid #f1f1f1;
+   
     perspective: 1000px; /* Retirer si vous ne voulez pas l'effet 3D */
     margin: 5px; /* Espacement autour de la carte */
 }
@@ -55,6 +55,8 @@ img {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Arrondir les coins du card */
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -80,6 +82,7 @@ img {
 .flip-card-front {
     background-color: #bbb;
     color: black;
+    border-radius: 15px; /* Arrondir les coins du card */
 }
 
 /* Style the back side */
@@ -92,6 +95,7 @@ img {
     flex-direction: column; /* Alignement vertical des éléments enfants */
     justify-content: center; /* Centrage vertical */
     align-items: center; /* Centrage horizontal */
+    border-radius: 15px; /* Arrondir les coins du card */
 
 }
 
@@ -100,5 +104,5 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.5rem; /* Arrondir les coins de l'image */
+    border-radius: 15px; /* Arrondir les coins de l'image */
 }

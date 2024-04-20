@@ -1,0 +1,56 @@
+<!-- leadList.html -->
+
+<template>
+
+
+    
+  
+    <lightning-card icon-name="standard:lead_list" title="Opportunity List">
+        <div>
+            <div class="slds-m-around_medium">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+      <!-- Download CSV Button -->
+      <lightning-button label="New" onclick={handleCreateRecord} variant="brand-outline" class="slds-m-left_x-small" title="New Opportunity"></lightning-button>
+
+  
+                        <!-- Download CSV Button -->                 
+                  <lightning-button label="Download CSV" onclick={downloadCSV} class="small-button"></lightning-button>              
+                    </div>                   
+                    <div class="slds-col"></div>
+                    <div class="slds-col slds-grow">
+                        <!-- <lightning-input type="search" label="Search" onchange={handleSearch} variant="label-hidden"></lightning-input> -->
+                        <lightning-input
+                                        placeholder="Search by name"
+                                        type="search"
+                                        value={searchKey}
+                                        onchange={handleSearchKeyChange}
+                                        variant="label-hidden"
+                                    ></lightning-input>
+                    </div>
+                </div>
+            </div>
+    
+</div>
+   
+    <!-- ici je suis entrain d'afficher la liste tout depend de Searchbar ( where Name : = ce que j'ai entrer en searchbar) -->
+        <template if:true={Oppsearch.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={Oppsearch.data}
+                columns={columns}
+                onrowaction={handleRowAction}
+            >
+           </lightning-datatable>
+        </template>
+
+    </lightning-card>
+
+     
+
+    <template if:true={errors}>
+        <p>{errors}</p>
+    </template> 
+
+    
+</template>

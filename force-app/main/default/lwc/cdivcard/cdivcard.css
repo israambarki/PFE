@@ -72,19 +72,27 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-  
-  .flip-card {
+.flip-card {
     border: 1px solid #ccc;
     border-radius: 0.5rem;
-
-
     background-color: transparent;
     width: 250px; /* Largeur de la carte */
     height: 300px; /* Hauteur de la carte */
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Retirer si vous ne voulez pas l'effet 3D */
     margin: 5px; /* Espacement autour de la carte */
+    transition: transform 0.8s, box-shadow 0.3s; /* Ajouter une transition */
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.6); /* Ombre remarquable en noir-gris */
 }
+
+/* Ajouter une ombre portée au survol */
+.flip-card:hover {
+    box-shadow: 0 16px 30px 0 rgba(0,0,0,0.8); /* Augmenter l'ombre au survol */
+    transform: scale(1.05); /* Effet de zoom */
+}
+
+
+
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {

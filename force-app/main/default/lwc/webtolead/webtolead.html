@@ -1,123 +1,128 @@
-<!--
-  @description       : 
-  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
-  @group             : 
-  @last modified on  : 03-22-2024
-  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
--->
+<!-- sldsValidatorIgnore -->
 <template>
-    
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
-   
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: Please add the following <FORM> element to your page.             -->
-    <!--  ----------------------------------------------------------------------  -->
-    <div class="card" >
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQy000005pucz" method="POST">
-    
-   
-    <input type=hidden name="oid" value="00DQy000005pucz">
-    <input type=hidden name="retURL" value="http://https://mindful-raccoon-tlkdt1-dev-ed.my.site.com/CareShieldsHealth">
-    
+    <div class="form">
+        <div class="title">Welcome</div>
+        <div class="subtitle">Let's create your account!</div>
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQy000005pucz" method="POST">
+
+            <input type=hidden name="oid" value="00DQy000005pucz">
+            <input type=hidden name="retURL" value="http://https://mindful-raccoon-tlkdt1-dev-ed.my.site.com/CareShieldsHealth">
+        
+            <input type="hidden" id="lead_source" name="lead_source" value="Experience Cloud" />
 
     <div class="form-row">
         <div class="form-column">
 
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-    <!--  these lines if you wish to test in debug mode.                          -->
-    <!--  <input type="hidden" name="debug" value=1>                              -->
-    <!--  <input type="hidden" name="debugEmail" value="mbarkiisraa@gmail.com">   -->
-    <!--  ----------------------------------------------------------------------  -->
-    
-    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
-    
-    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
-    
-    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
-    
-    <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" required/><br>
-    
-    <label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
-</div>
+            <div class="input-container ic1">
+                <input id="first_name" name="first_name" class="input" type="text" placeholder=" "  aria-required="true" required />
+                <div class="cut"></div>
+                <label for="first_name" class="placeholder">First name</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="last_name" name="last_name"  class="input" type="text" placeholder=" "  aria-required="true" required/>
+                <div class="cut"></div>
+                <label for="last_name" class="placeholder">Last name</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="email" name="email" class="input" type="text" placeholder=" "  aria-required="true" required/>
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder">Email</label>
+            </div>
 
-<div class="form-column">
-    <label for="url">Website</label><input  id="url" maxlength="80" name="url" size="20" type="text" /><br>
-    
-    <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required/><br>
-    
-    <label for="revenue">Annual Revenue</label><input  id="revenue" name="revenue" size="20" type="text" required/><br>
-    
-    Durée d&#39;assurance:<select id="00NQy000002ATjY" name="00NQy000002ATjY" title="Durée d&#39;assurance" required><option value="">--None--</option><option value="1 an">1 an</option>
-    <option value="2 an">2 an</option>
-    <option value="3 an">3 an</option>
-    <option value="4 an">4 an</option>
-    <option value="5 an">5 an</option>
-    <option value="plus de 5ans">plus de 5ans</option>
-    </select><br>
-    
-    Industrie:<select  id="00NQy000002AWK6" name="00NQy000002AWK6" title="Industrie" required><option value="">--None--</option><option value="Agroalimentaire">Agroalimentaire</option>
-    <option value="Automobile">Automobile</option>
-    <option value="Banque/Finance">Banque/Finance</option>
-    <option value="Éducation">Éducation</option>
-    <option value="Santé">Santé</option>
-    <option value="IT">IT</option>
-    <option value="Immobilier">Immobilier</option>
-    </select><br>
-   
-</div>
-</div>
+            <div class="input-container ic2">
+                <input id="phone" name="phone" class="input" type="text" placeholder=" "  aria-required="true" required/>
+                <div class="cut cut-short"></div>
+                <label for="phone" class="placeholder">Phone</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="company" name="company" class="input" type="text" placeholder=" "  aria-required="true" required/>
+                <div class="cut"></div>
+                <label for="company" class="placeholder">Company</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="revenue" name="revenue" class="input" type="text" placeholder=" "  aria-required="true" required/>
+                <div class="cut cut-long"></div>
+                <label for="revenue" class="placeholder">Annual Revenue(DT)</label>
+            </div>
+        </div>
 
-<div class="form-row">
-    <div class="form-column">
+        <div class="form-column">
+            <div class="input-container ic1">
+                <input id="00NQy000002AXZS" name="00NQy000002AXZS" class="input" type="text" placeholder=" "  aria-required="true" required/>
+                <div class="cut cut-long"></div>
+                <label for="00NQy000002AXZS" class="placeholder">Nombre d'employés</label>
+            </div>
+            <div class="input-container ic2"> <!-- New input container for select -->
+                <select id="00NQy000002AXxd" name="00NQy000002AXxd" class="input"  aria-required="true" required> <!-- Apply input class to select element -->
+                  <option value="">Type d'assurance</option>
+                  <option value="Assurance Maladie">Assurance Maladie</option>
+                  <option value="Assurance Accident">Assurance Accident</option>
+                  <option value="Assurance Vie">Assurance Vie</option>
 
-    Type d&#39;assurance:<select  id="00NQy000002AXxd" name="00NQy000002AXxd" title="Type d&#39;assurance" required ><option value="">--None--</option><option value="Assurance maladie">Assurance maladie</option>
-    <option value="Assurance Accident">Assurance Accident</option>
-    <option value="Assurance Vie">Assurance Vie</option>
-    </select><br>
+                </select>
+
+                <div class="cut cut-short"></div>
+                <label for="00NQy000002AXxd" class="placeholder">Type d'assurance</label>
+
+            </div>    
+            <div class="input-container ic2"> <!-- New input container for select -->
+                <select id="00NQy000002ATjY" name="00NQy000002ATjY" class="input"  aria-required="true" required> <!-- Apply input class to select element -->
+                <option value="">Durée d'assurance</option>
+                <option value="1 an">1 an</option>
+                <option value="2 ans">2 ans</option>
+                <option value="3 ans">3 ans</option>
+                <option value="4 ans">4 ans</option>
+                <option value="5 ans">5 ans</option>
+                <option value="plus de 5 ans">plus de 5 ans</option>
+                </select>
+
+                <div class="cut cut-short"></div>
+                <label for="00NQy000002ATjY" class="placeholder">Durée d'assurance</label>
+            </div>
+            <div class="input-container ic2"> <!-- New input container for select -->
+                <select id="00NQy000002AWK6" name="00NQy000002AWK6" class="input"  aria-required="true" required> <!-- Apply input class to select element -->
+                    <option value="">Industrie</option>
+                    <option value="Agroalimentaire">Agroalimentaire</option>
+                    <option value="Automobile">Automobile</option>
+                    <option value="Banque/Finance">Banque/Finance</option>
+                    <option value="Éducation">Éducation</option>
+                    <option value="Santé">Santé</option>
+                    <option value="IT">IT</option>
+                    <option value="Immobilier">Immobilier</option>
+                
+                </select>
+                <div class="cut cut-short"></div>
+                <label for="00NQy000002AWK6" class="placeholder">Industrie</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="country" name="country" class="input" type="text" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="country" class="placeholder">Country</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="city" name="city" class="input" type="text" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="city" class="placeholder">City</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="state" name="state" class="input" type="text" placeholder=" " />
+                <div class="cut cut-long"></div>
+                <label for="state" class="placeholder">State/Province</label>
+            </div>    
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-column">
+            <div class="g-recaptcha" data-sitekey="6Lf9ZKEpAAAAAPSf89Pcgt8DXwbXhQRju-GgyqPt"></div><br>
+        </div>
+    </div>
     
-    Pays:<input  id="00NQy000002AYAX" maxlength="100" name="00NQy000002AYAX" size="20" type="text" /><br>
-    
-    Ville:<input  id="00NQy000002AUlG" maxlength="100" name="00NQy000002AUlG" size="20" type="text" /><br>
-    
-    Code postal (Zip):<input  id="00NQy000002AWNG" maxlength="100" name="00NQy000002AWNG" size="20" type="text" /><br>
-    
-    Nombre d&#39;employés:<input  id="00NQy000002AXZS" name="00NQy000002AXZS" size="20" type="text" required/><br>
-</div>
-</div>
-
-<div class="form-row">
-    <div class="form-column">
-    <div class="g-recaptcha" data-sitekey="6Lf9ZKEpAAAAAPSf89Pcgt8DXwbXhQRju-GgyqPt"></div><br>
-</div>
-</div>
-   
-<div class="form-row" style="align-self: center;">
-    <div class="form-column">
-    <input type="submit" name="submit">
-</div>
-</div>
-
-
-
-
-
+    <div class="form-row" style="align-self: center;">
+        <div class="form-column">
+            <input type="submit" name="submit" class="submit">
+        </div>
+    </div>
     </form>
 </div> 
-    
-
-
-
-
-
-    
 </template>
-
-
-
-<!--  css de form -->
-
